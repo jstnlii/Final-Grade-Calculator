@@ -9,7 +9,10 @@ table {
 }
 th, td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #a6a6a6;
+}
+th {
+    background-color: #ddd;
 }
 button {
     margin: 10px;
