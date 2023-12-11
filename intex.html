@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Final Grade Calculator</title>
+    
+</head>
+<body>
+
+<h1>Final Grade Calculator</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Assignment Name</th>
+            <th>Grade (%)</th>
+            <th>Weight (%)</th>
+        </tr>
+    </thead>
+    <tbody id="gradeTableBody">
+        
+        <tr>
+            <td><input type="text" class="assignment-name"></td>
+            <td><input type="number" class="assignment-grade" step="0.01" min="0" max="100"></td>
+            <td><input type="number" class="assignment-weight" step="0.01" min="0" max="100" oninput="updateRemainingWeight()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="assignment-name"></td>
+            <td><input type="number" class="assignment-grade" step="0.01" min="0" max="100"></td>
+            <td><input type="number" class="assignment-weight" step="0.01" min="0" max="100" oninput="updateRemainingWeight()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="assignment-name"></td>
+            <td><input type="number" class="assignment-grade" step="0.01" min="0" max="100"></td>
+            <td><input type="number" class="assignment-weight" step="0.01" min="0" max="100" oninput="updateRemainingWeight()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="assignment-name"></td>
+            <td><input type="number" class="assignment-grade" step="0.01" min="0" max="100"></td>
+            <td><input type="number" class="assignment-weight" step="0.01" min="0" max="100" oninput="updateRemainingWeight()"></td>
+        </tr>
+        <tr>
+            <td><input type="text" class="assignment-name"></td>
+            <td><input type="number" class="assignment-grade" step="0.01" min="0" max="100"></td>
+            <td><input type="number" class="assignment-weight" step="0.01" min="0" max="100" oninput="updateRemainingWeight()"></td>
+        </tr>
+    </tbody>
+</table>
+
+<button onclick="calculateFinalGrade()">Calculate Final Grade</button>
+<button onclick="addRows()">Add 3 Rows</button>
+<button onclick="clearFields()">Clear Fields</button>
+
+<div id="result"></div>
+<div id="remainingWeight">Remaining Weight: 100%</div>
+
+</body>
+</html>
