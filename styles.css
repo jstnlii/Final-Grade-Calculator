@@ -1,7 +1,17 @@
+:root {
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+h1 {
+    font-family: -apple-system, sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, sans-serif;
     text-align: center;
 }
+
 table {
     margin: 20px auto;
     border-collapse: collapse;
