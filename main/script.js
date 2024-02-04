@@ -14,7 +14,7 @@ function calculateFinalGrade() {
     const remainingWeight = (100 - totalWeight).toFixed(2);
     const finalGrade = (totalWeight > 0) ? (weightedSum / totalWeight).toFixed(2) : 0;
 
-    document.getElementById('result').innerHTML = `<h2>Your Final Grade is: <span class="${finalGrade >= 60 ? 'passing' : 'overweight'}">${finalGrade}%</span></h2>`;
+    document.getElementById('result').innerHTML = `<h2><span style="color: white;">Your Final Grade is:</span> <span class="${finalGrade >= 60 ? 'passing' : 'overweight'}">${finalGrade}%</span></h2>`;
     updateRemainingWeightColor(remainingWeight);
 }
 
@@ -25,8 +25,8 @@ function addRows() {
         const newRow = tableBody.insertRow();
         newRow.innerHTML = `
             <td><input type="text" class="assignment-name"></td>
-            <td><input type="number" class="assignment-grade" step="0.01" min="0" max="100"></td>
-            <td><input type="number" class="assignment-weight" step="0.01" min="0" max="100" oninput="updateRemainingWeight()"></td>
+            <td><input type="number" class="assignment-grade" ></td>
+            <td><input type="number" class="assignment-weight" oninput="updateRemainingWeight()"></td>
         `;
     }
 }

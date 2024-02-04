@@ -16,7 +16,13 @@ table {
     border-radius: 5px;
 }
 
-th, td {
+td {
+    color: white;
+    padding: 10px;
+    border: 1px solid #7d7d7d;
+}
+
+th {
     color: #2e2e2e;
     padding: 10px;
     border: 1px solid #7d7d7d;
@@ -26,12 +32,23 @@ th {
     background-color: #6ea8fe;
 }
 
+input {
+    color: white;
+}
+
 input[type="text"],
 input[type="number"] {
     padding: 3px;
     border: 1px solid #7d7d7d;
     background-color: transparent;
     border-radius: 4px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 0;
+
 }
 
 button {
