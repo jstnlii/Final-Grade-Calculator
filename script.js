@@ -69,7 +69,7 @@ function updateRemainingWeightColor(remainingWeight) {
     remainingWeightElement.classList.toggle('overweight', remainingWeight < 0);
 }
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         calculateFinalGrade();
     }
